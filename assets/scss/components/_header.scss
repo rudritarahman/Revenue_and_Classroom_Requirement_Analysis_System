@@ -1,0 +1,47 @@
+/*=============== HEADER ===============*/
+.header {
+  width: 100%;
+  background-color: var(--container-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  transition: 0.3s; // For animation dark mode
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+    font-size: var(--normal-font-size);
+    text-transform: uppercase;
+
+    & a {
+      color: inherit;
+      background: linear-gradient(
+          to right,
+          rgba(100, 200, 200, 1),
+          rgba(100, 200, 200, 1)
+        ),
+        linear-gradient(
+          to right,
+          rgba(255, 0, 0, 1),
+          rgba(255, 0, 180, 1),
+          rgba(0, 100, 200, 1)
+        );
+      background-size: 100% 2px, 0 2px;
+      background-position: 100% 100%, 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 0.3s;
+
+      &:hover {
+        background-size: 0 2px, 100% 2px;
+      }
+    }
+  }
+}

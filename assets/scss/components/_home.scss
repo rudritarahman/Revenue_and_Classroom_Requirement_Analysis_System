@@ -1,0 +1,74 @@
+/*=============== HOME ===============*/
+.home {
+  &__img {
+    display: block;
+    width: 25%;
+    height: auto;
+    padding-top: var(--mb-0-75);
+    margin: 0 auto 0;
+  }
+
+  &__container {
+    row-gap: var(--mb-1-5);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__height {
+    height: auto;
+  }
+
+  &__title {
+    font-size: var(--header-font-size);
+    font-weight: var(--font-bold);
+    color: var(--title-color);
+    text-align: center;
+    margin-top: var(--mb-0-75);
+    margin-bottom: var(--mb-0-75);
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+    & button {
+      padding: var(--mb-1-5);
+      margin: var(--mb-1);
+      cursor: pointer;
+      outline: none;
+      background-color: var(--button-color);
+      border: none;
+      border-radius: var(--mb-1);
+      box-shadow: 0 6px #999;
+
+      /*& :hover {
+        background-color: var(--button-color-alt);
+        padding: var(--mb-1);
+        border-radius: var(--mb-1);
+      }*/
+
+      ::active {
+        background-color: var(--button-color-alt);
+        box-shadow: 0 6px #999;
+      }
+
+      & a {
+        font-size: var(--title-font-size);
+        font-weight: var(--font-semi-bold);
+        font-family: var(--body-font);
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--first-color);
+
+        & :hover {
+          text-transform: capitalize;
+          color: red;
+        }
+      }
+    }
+  }
+}

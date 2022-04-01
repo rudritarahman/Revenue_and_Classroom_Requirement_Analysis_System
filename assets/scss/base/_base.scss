@@ -1,0 +1,76 @@
+/*=============== BASE ===============*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  /*background-image: -webkit-linear-gradient(
+    60deg,
+    rgba(218, 169, 215, 0.637),
+    rgba(128, 174, 235, 0.904)
+  );*/
+  background-image: radial-gradient(
+    circle at -7.92% 90.56%,
+    #eaedd5 0,
+    #e6eed6 4.55%,
+    #e3efd8 9.09%,
+    #dff0da 13.64%,
+    #dcf0dd 18.18%,
+    #d9f1df 22.73%,
+    #d6f1e2 27.27%,
+    #d3f2e5 31.82%,
+    #d1f2e8 36.36%,
+    #cff2ec 40.91%,
+    #cef2ef 45.45%,
+    #cdf2f2 50%,
+    #cdf2f5 54.55%,
+    #cdf1f8 59.09%,
+    #cef1fa 63.64%,
+    #cff0fd 68.18%,
+    #d1f0ff 72.73%,
+    #d4efff 77.27%,
+    #d6eeff 81.82%,
+    #daedff 86.36%,
+    #ddecff 90.91%,
+    #e1ebff 95.45%,
+    #e5eaff 100%
+  );
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: var(--text-color);
+  transition: 0.4s; //for animation dark mode
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--font-bold);
+  color: var(--title-color);
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
