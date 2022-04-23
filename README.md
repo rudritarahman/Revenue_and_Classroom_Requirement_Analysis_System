@@ -1,4 +1,4 @@
-# student_enrollment_and_class_allocation_system
+# Revenue and Classroom Requirement Analysis System (RCRAS)
 
 ## A website to handle student and institutional operations like:
 
