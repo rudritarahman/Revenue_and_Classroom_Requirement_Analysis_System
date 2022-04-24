@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+#<<<<<<< HEAD
 """
 Django settings for mysite project.
 
